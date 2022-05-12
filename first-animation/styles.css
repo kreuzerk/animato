@@ -1,0 +1,54 @@
+svg {
+  height: 500px;
+}
+
+@keyframes bounce-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+
+  70% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+}
+
+.straw {
+  animation: fall 2s ease-in;
+}
+
+.ice-cube-one {
+  animation: bounce-down 1s ease-in-out;
+  animation-delay: 0s;
+}
+
+.ice-cube-two {
+  animation: bounce-down 2s ease-in-out;
+  animation-delay: 0;
+}
+
+.ice-cube-three {
+  animation: bounce-down 1.5s ease-in-out;
+  animation-delay: 0;
+}
